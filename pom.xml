@@ -4,6 +4,10 @@
   <groupId>org.zhuravlev.springcourse</groupId>
   <artifactId>SpringBootJava</artifactId>
   <packaging>war</packaging>
+  <properties>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+  </properties>
   <version>1.0-SNAPSHOT</version>
   <name>SpringBootJava Maven Webapp</name>
   <url>http://maven.apache.org</url>
