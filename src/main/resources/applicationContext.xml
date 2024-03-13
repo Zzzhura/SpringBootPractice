@@ -6,13 +6,15 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:musicProperties.properties"/>
     <bean id="musicBean"
         class="org.zhuravlev.springcourse.ClassicalMusic">
     </bean>
     <bean id="musicPlayer"
           class="org.zhuravlev.springcourse.MusicPlayer">
         <property name="music" ref="musicBean"/>
-        <property name="name" value="Some name"/>
-        <property name="volume" value="100"/>
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
 </beans>
