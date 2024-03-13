@@ -12,5 +12,7 @@
     <bean id="musicPlayer"
           class="org.zhuravlev.springcourse.MusicPlayer">
         <property name="music" ref="musicBean"/>
+        <property name="name" value="Some name"/>
+        <property name="volume" value="100"/>
     </bean>
 </beans>
