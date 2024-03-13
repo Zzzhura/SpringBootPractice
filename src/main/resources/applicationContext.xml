@@ -6,8 +6,7 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id="testBean"
-        class="org.zhuravlev.springcourse.TestBean">
-        <constructor-arg value="Ivan"/>
+    <bean id="musicBean"
+        class="org.zhuravlev.springcourse.ClassicalMusic">
     </bean>
 </beans>
