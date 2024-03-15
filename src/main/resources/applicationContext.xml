@@ -10,6 +10,7 @@
     <context:property-placeholder location="classpath:musicProperties.properties"/>
     <bean id="musicBean"
         class="org.zhuravlev.springcourse.ClassicalMusic"
+        scope="prototype"
         init-method="doMyInit"
         destroy-method="doMyDestroy">
     </bean>
