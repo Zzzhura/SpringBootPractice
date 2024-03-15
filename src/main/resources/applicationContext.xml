@@ -10,13 +10,14 @@
     <context:property-placeholder location="classpath:musicProperties.properties"/>
     <bean id="musicBean"
         class="org.zhuravlev.springcourse.ClassicalMusic"
-        scope="prototype"
+        scope="singleton"
         init-method="doMyInit"
-        destroy-method="doMyDestroy">
+        destroy-method="doMyDestroy"
+        factory-method="getClassicalMusic">
     </bean>
     <bean id="musicPlayer"
-          class="org.zhuravlev.springcourse.MusicPlayer"
-          scope="prototype">
+        class="org.zhuravlev.springcourse.MusicPlayer"
+        scope="prototype">
         <property name="music" ref="musicBean"/>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
