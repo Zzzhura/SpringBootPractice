@@ -12,7 +12,8 @@
         class="org.zhuravlev.springcourse.ClassicalMusic">
     </bean>
     <bean id="musicPlayer"
-          class="org.zhuravlev.springcourse.MusicPlayer">
+          class="org.zhuravlev.springcourse.MusicPlayer"
+          scope="prototype">
         <property name="music" ref="musicBean"/>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
