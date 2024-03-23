@@ -16,9 +16,8 @@ public class MusicPlayer {
         this.rapMusic = rapMusic;
     }
 
-    public void playMusic()
+    public String playMusic()
     {
-        System.out.println("Playing: " + this.classicalMusic.getSong());
-        System.out.println("Playing: " + this.rapMusic.getSong());
+        return ("Playing: " + this.classicalMusic.getSong() + "Playing: " + this.rapMusic.getSong());
     }
 }
