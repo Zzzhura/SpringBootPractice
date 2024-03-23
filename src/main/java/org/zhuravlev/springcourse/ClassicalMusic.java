@@ -1,8 +1,9 @@
 package org.zhuravlev.springcourse;
 
 import org.springframework.stereotype.Component;
-
+import org.springframework.context.annotation.Scope;
 @Component
+@Scope("singleton")
 public class ClassicalMusic implements Music{
     private ClassicalMusic() {}
 
