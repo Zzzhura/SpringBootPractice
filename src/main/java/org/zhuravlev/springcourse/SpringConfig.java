@@ -30,6 +30,6 @@ public class SpringConfig {
     @Bean
     public Computer computer()
     {
-        return new Computer(musicPlayer());
+        return new Computer(musicPlayer()); 
     }
 }
